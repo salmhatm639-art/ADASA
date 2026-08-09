@@ -1,0 +1,256 @@
+.sec-container {
+  background-color: #0d0d0d;
+  max-width: 100% !important;
+}
+
+.navLink {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 4px 14px;
+  border: #303030 solid 1px;
+  background-color: #161616;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.navLink:hover {
+  border-color: #762a02;
+}
+
+.search {
+  background-color: #161616;
+  border: 1px solid #5e5b5b;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section-top {
+  position: sticky;
+  top: 77px;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding-top: 12px;
+}
+
+.section-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background-color: #303030;
+}
+
+.Name {
+  flex-direction: row-reverse;
+}
+
+.actives {
+  background-color: #e1570c;
+  border-radius: 10px;
+  color: white;
+  border-color: #e1570c;
+}
+
+.my-active {
+  background-color: #e1570c;
+  border-radius: 6px;
+  color: white;
+}
+
+/* ====== Icons ====== */
+i {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 3px;
+}
+
+/* ====== Post count ====== */
+.postcount {
+  color: white;
+}
+
+/* ====== Grid Card ====== */
+.adasagrid {
+  background-color: #161616;
+  overflow: hidden;
+  flex: 1;
+  transition: transform 0.5s ease;
+
+}
+
+.adasagrid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.adasagrid:hover .img-photo img {
+  transform: scale(1.05);
+}
+
+.adasagrid:hover h4 {
+  color: #e1570c;
+
+}
+
+.adasagrid:hover .icon-grid {
+  color: white;
+  background-color: #e1570c;
+}
+
+/* ====== List Card ====== */
+.adasa-hover {
+  background-color: #161616;
+  overflow: hidden;
+  flex: 1;
+    outline: #762a02 1px solid transparent;
+  transition: transform 0.5s ease, outline-color 0.5s ease;
+
+}
+.adasagrid h4,
+.adasa-hover h4 {
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.adasa-hover:hover h4 {
+  color: #e1570c;
+}
+
+.adasa-hover:hover .img-list {
+  transform: scale(1.05);
+}
+
+
+.adasa:hover .read-more i {
+  margin-right: 3px;
+}
+
+/* ====== Images ====== */
+.img-photo {
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.img-photo img {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-photo-list {
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-list {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .img-list {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-photo-list {
+    width: 320px;
+  }
+}
+
+/* ====== Card shared ====== */
+.right {
+  flex: 1;
+  min-width: 0;
+}
+
+.details {
+  border-bottom: 1px solid rgb(86, 85, 85);
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.profile {
+  padding: 12px;
+}
+
+.profile img {
+  border: 3px solid rgb(77, 75, 75);
+}
+
+/* ====== Badges ====== */
+.spanBrands {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.spanBrands-list {
+  color: #e1570c;
+  background-color: rgba(172, 115, 45, 0.1);
+  border: #e1570c solid 1px;
+}
+
+/* ====== Icon Grid ====== */
+.icon-grid {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: #e1570c solid 1px;
+  color: #e1570c;
+  background-color: rgba(172, 115, 45, 0.1);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ====== Read More ====== */
+.read-more {
+  color: #e1570c;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.read-more i {
+  transition: margin-right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.changer {
+  background-color: #161616;
+  border: 1px solid #292828;
+  font-weight: 400;
+  color: white;
+}
