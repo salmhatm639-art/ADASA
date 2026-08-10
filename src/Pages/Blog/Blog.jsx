@@ -145,7 +145,7 @@ export default function Blog() {
           <div className="row g-5">
             {finalPosts.map((item) => (
               <div
-                className={`col-12 ${display === "grid" ? "col-md-6" : "col-12"}`}
+                className={`col-12 ${display === "grid" ? "col-md-4" : "col-12"}`}
                 key={item.id}
               >
                 {/* List Layout */}
